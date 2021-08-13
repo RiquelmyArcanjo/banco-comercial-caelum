@@ -16,7 +16,7 @@ namespace Banco_Comercial_IBM
                 throw new ArgumentException("O Valor de saque deve ser maior que zero.");
             if (Saldo < valor)
                 throw new SaldoInsuficienteException("A retirada é maior que o saldo da conta.");
-            
+
             this.Saldo -= valor;
         }
         public override void Depositar(double valor)
@@ -28,15 +28,9 @@ namespace Banco_Comercial_IBM
 
             this.Saldo += valor;
         }
-        public void CalculaRendimento()
-        {
-            //	...
-        }
         public double CalcularTributos()
         {
             return Saldo * 0.02;
         }
-
-
     }
 }

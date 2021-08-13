@@ -80,7 +80,7 @@ namespace Banco_Comercial_IBM
                     try
                     {
                         selecionada.Sacar(Convert.ToDouble(txtValor.Text));
-                        if(selecionada is ContaCorrente)
+                        if (selecionada is ContaCorrente)
                         {
                             listHistoricoMovimentacoes.Add("- Saque de R$ " + txtValor.Text + " + taxa de R$ 0,10 em " + DateTime.Now + " (Titular id: " + selecionada.Numero + ").");
                             msgOperacao = Convert.ToDouble(txtValor.Text) + " reais foram sacados! (Taxa de R$0,10 aplicada)";
@@ -114,7 +114,7 @@ namespace Banco_Comercial_IBM
                     try
                     {
                         selecionada.Depositar(Convert.ToDouble(txtValor.Text));
-                        if(selecionada is ContaEstudante)
+                        if (selecionada is ContaEstudante)
                         {
                             listHistoricoMovimentacoes.Add("- Depósito de R$ " + txtValor.Text + " + bônus de 1% em " + DateTime.Now + " (Titular id: " + selecionada.Numero + ").");
                             msgOperacao = txtValor.Text + " reais foram depositados! (Bônus de 1% aplicado)";
@@ -244,7 +244,6 @@ namespace Banco_Comercial_IBM
                 txtNumeroContaDestino.Text = txtNumeroConta.Text;
                 txtNumeroContaDestino.Enabled = false;
 
-
                 if (cmbTipoMovimento.Text == "Sacar")
                     lblMsg.Text = "Taxa de saque na conta corrente: R$ 0,10.";
                 else if (cmbTipoMovimento.Text == "Depositar")
@@ -269,9 +268,7 @@ namespace Banco_Comercial_IBM
 
         private void btnNovaConta_Click(object sender, EventArgs e)
         {
-            //this representa a instância de Form1 que está sendo utilizada pelo Window Form
             FormCadastroConta formularioDeCadastro = new FormCadastroConta(this);
-            //Mostra o form
             formularioDeCadastro.ShowDialog();
         }
         private void btnBuscaTitular_Click(object sender, EventArgs e)

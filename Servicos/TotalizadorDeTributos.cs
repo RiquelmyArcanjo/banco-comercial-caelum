@@ -15,5 +15,4 @@ namespace Banco_Comercial_IBM
             this.Total += t.CalcularTributos();
         }
     }
-
 }

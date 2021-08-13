@@ -30,7 +30,7 @@ namespace Banco_Comercial_IBM.UI
                 txtResultadoRelatorio.Text = String.Empty;
                 //SALDO GERAL
                 if (cmbRelatorios.Text == "Saldo Geral")
-                {             
+                {
                     double totalSaldoContas = 0;
                     foreach (Conta conta in contas)
                     {
@@ -46,7 +46,7 @@ namespace Banco_Comercial_IBM.UI
                     foreach (var c in consulta)
                     {
                         txtResultadoRelatorio.Text += c.Titular.Nome + " (Código: " + c.Numero + ")." + Environment.NewLine;
-                    }                    
+                    }
                 }
                 //MAIOR SALDO
                 else if (cmbRelatorios.Text == "Maior Saldo")
@@ -88,14 +88,14 @@ namespace Banco_Comercial_IBM.UI
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Erro inesperado: " + ex.Message);
             }
             finally
             {
                 txtResultadoRelatorio.Text += (string.Format("Relatório gerado em: {0}.", DateTime.Now));
-            }      
+            }
         }
 
         private void FormRelatorios_Load(object sender, EventArgs e)

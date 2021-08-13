@@ -20,7 +20,6 @@ namespace Banco_Comercial_IBM
         //Criando a variável para pegar a coleção de devedores, sendo ela list, hashset ou sortset... (ICollection é genérico)
         private ICollection<string> devedores;//tipando para string
 
-        //Construtor
         public FormCadastroConta(FormHome formPrincipal)
         {
             this.formPrincipal = formPrincipal;
@@ -30,14 +29,11 @@ namespace Banco_Comercial_IBM
             GeradorDeDevedores objGeraDevedores = new GeradorDeDevedores();
             this.devedores = objGeraDevedores.GerarListaNomes();
         }
-        //load do form colocar o numero da conta
         private void btnCadastraConta_Click(object sender, EventArgs e)
         {
-            //bool retornoCadastraConta = true;
-
             string titular = txtNomeTitular.Text;
-
-            bool isDevedor = this.devedores.Contains(titular);//verifica se o nome digitado é um devedor
+            //verifica se o nome digitado é um devedor
+            bool isDevedor = this.devedores.Contains(titular);
 
             if (txtNomeTitular.Text == "" || cmbTipoConta.Text == "")
                 MessageBox.Show("Preencha todos os campos!");                        

@@ -28,11 +28,6 @@ namespace Banco_Comercial_IBM
 
             this.Saldo += valor;
         }
-        public void CalcularRendimento()
-        {
-            //	...
-        }
-
         public double CalcularTributos()
         {
             return Saldo * 0.05;
