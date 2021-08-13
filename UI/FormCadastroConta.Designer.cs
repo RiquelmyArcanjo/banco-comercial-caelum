@@ -47,7 +47,7 @@ namespace Banco_Comercial_IBM
             this.txtNomeTitular.Location = new System.Drawing.Point(521, 83);
             this.txtNomeTitular.Name = "txtNomeTitular";
             this.txtNomeTitular.Size = new System.Drawing.Size(480, 37);
-            this.txtNomeTitular.TabIndex = 1;
+            this.txtNomeTitular.TabIndex = 2;
             // 
             // txtNumeroConta
             // 
@@ -56,7 +56,7 @@ namespace Banco_Comercial_IBM
             this.txtNumeroConta.Location = new System.Drawing.Point(521, 224);
             this.txtNumeroConta.Name = "txtNumeroConta";
             this.txtNumeroConta.Size = new System.Drawing.Size(480, 37);
-            this.txtNumeroConta.TabIndex = 3;
+            this.txtNumeroConta.TabIndex = 4;
             // 
             // lblNomeTitular
             // 
@@ -88,7 +88,7 @@ namespace Banco_Comercial_IBM
             this.btnCadastraConta.Location = new System.Drawing.Point(521, 296);
             this.btnCadastraConta.Name = "btnCadastraConta";
             this.btnCadastraConta.Size = new System.Drawing.Size(480, 55);
-            this.btnCadastraConta.TabIndex = 4;
+            this.btnCadastraConta.TabIndex = 5;
             this.btnCadastraConta.Text = "Cadastrar";
             this.btnCadastraConta.UseVisualStyleBackColor = true;
             this.btnCadastraConta.Click += new System.EventHandler(this.btnCadastraConta_Click);
@@ -117,7 +117,7 @@ namespace Banco_Comercial_IBM
             this.cmbTipoConta.Location = new System.Drawing.Point(521, 150);
             this.cmbTipoConta.Name = "cmbTipoConta";
             this.cmbTipoConta.Size = new System.Drawing.Size(480, 38);
-            this.cmbTipoConta.TabIndex = 2;
+            this.cmbTipoConta.TabIndex = 3;
             // 
             // grpCadastroConta
             // 
@@ -133,7 +133,7 @@ namespace Banco_Comercial_IBM
             this.grpCadastroConta.Location = new System.Drawing.Point(65, 50);
             this.grpCadastroConta.Name = "grpCadastroConta";
             this.grpCadastroConta.Size = new System.Drawing.Size(1043, 402);
-            this.grpCadastroConta.TabIndex = 38;
+            this.grpCadastroConta.TabIndex = 1;
             this.grpCadastroConta.TabStop = false;
             this.grpCadastroConta.Text = "Cadastro Conta";
             // 

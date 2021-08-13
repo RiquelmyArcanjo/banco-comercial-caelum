@@ -53,7 +53,7 @@ namespace Banco_Comercial_IBM.UI
             this.cmbRelatorios.Location = new System.Drawing.Point(577, 98);
             this.cmbRelatorios.Name = "cmbRelatorios";
             this.cmbRelatorios.Size = new System.Drawing.Size(780, 38);
-            this.cmbRelatorios.TabIndex = 3;
+            this.cmbRelatorios.TabIndex = 2;
             this.cmbRelatorios.SelectedIndexChanged += new System.EventHandler(this.cmbRelatorios_SelectedIndexChanged);
             // 
             // txtResultadoRelatorio
@@ -65,7 +65,7 @@ namespace Banco_Comercial_IBM.UI
             this.txtResultadoRelatorio.ReadOnly = true;
             this.txtResultadoRelatorio.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtResultadoRelatorio.Size = new System.Drawing.Size(1282, 493);
-            this.txtResultadoRelatorio.TabIndex = 4;
+            this.txtResultadoRelatorio.TabIndex = 3;
             // 
             // grpRelatorios
             // 
@@ -78,7 +78,7 @@ namespace Banco_Comercial_IBM.UI
             this.grpRelatorios.Location = new System.Drawing.Point(63, 61);
             this.grpRelatorios.Name = "grpRelatorios";
             this.grpRelatorios.Size = new System.Drawing.Size(1435, 835);
-            this.grpRelatorios.TabIndex = 5;
+            this.grpRelatorios.TabIndex = 1;
             this.grpRelatorios.TabStop = false;
             this.grpRelatorios.Text = "Relatórios";
             // 
@@ -90,7 +90,7 @@ namespace Banco_Comercial_IBM.UI
             this.btnSalvarRelatorio.Location = new System.Drawing.Point(949, 715);
             this.btnSalvarRelatorio.Name = "btnSalvarRelatorio";
             this.btnSalvarRelatorio.Size = new System.Drawing.Size(408, 71);
-            this.btnSalvarRelatorio.TabIndex = 14;
+            this.btnSalvarRelatorio.TabIndex = 4;
             this.btnSalvarRelatorio.Text = "Salvar Relatório";
             this.btnSalvarRelatorio.UseVisualStyleBackColor = true;
             this.btnSalvarRelatorio.Click += new System.EventHandler(this.btnSalvarRelatorio_Click);

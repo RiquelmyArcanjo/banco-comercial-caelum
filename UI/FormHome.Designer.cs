@@ -51,6 +51,8 @@ namespace Banco_Comercial_IBM
             this.lblEscolhaConta = new System.Windows.Forms.Label();
             this.cmbContas = new System.Windows.Forms.ComboBox();
             this.grpBuscaConta = new System.Windows.Forms.GroupBox();
+            this.lblTipoConta = new System.Windows.Forms.Label();
+            this.txtTipoConta = new System.Windows.Forms.TextBox();
             this.grpConta.SuspendLayout();
             this.grpBuscaConta.SuspendLayout();
             this.SuspendLayout();
@@ -59,10 +61,10 @@ namespace Banco_Comercial_IBM
             // 
             this.txtSaldoFinal.Enabled = false;
             this.txtSaldoFinal.Font = new System.Drawing.Font("Lucida Console", 9F);
-            this.txtSaldoFinal.Location = new System.Drawing.Point(499, 134);
+            this.txtSaldoFinal.Location = new System.Drawing.Point(500, 201);
             this.txtSaldoFinal.Name = "txtSaldoFinal";
             this.txtSaldoFinal.Size = new System.Drawing.Size(480, 37);
-            this.txtSaldoFinal.TabIndex = 5;
+            this.txtSaldoFinal.TabIndex = 8;
             // 
             // cmbTipoMovimento
             // 
@@ -73,10 +75,10 @@ namespace Banco_Comercial_IBM
             "Sacar",
             "Depositar",
             "Transferir"});
-            this.cmbTipoMovimento.Location = new System.Drawing.Point(499, 203);
+            this.cmbTipoMovimento.Location = new System.Drawing.Point(500, 270);
             this.cmbTipoMovimento.Name = "cmbTipoMovimento";
             this.cmbTipoMovimento.Size = new System.Drawing.Size(480, 38);
-            this.cmbTipoMovimento.TabIndex = 6;
+            this.cmbTipoMovimento.TabIndex = 9;
             this.cmbTipoMovimento.SelectedIndexChanged += new System.EventHandler(this.cmbTipoMovimento_SelectedIndexChanged);
             // 
             // btnMovimentacao
@@ -85,10 +87,10 @@ namespace Banco_Comercial_IBM
             this.btnMovimentacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMovimentacao.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovimentacao.ForeColor = System.Drawing.Color.White;
-            this.btnMovimentacao.Location = new System.Drawing.Point(499, 399);
+            this.btnMovimentacao.Location = new System.Drawing.Point(499, 471);
             this.btnMovimentacao.Name = "btnMovimentacao";
             this.btnMovimentacao.Size = new System.Drawing.Size(480, 71);
-            this.btnMovimentacao.TabIndex = 9;
+            this.btnMovimentacao.TabIndex = 12;
             this.btnMovimentacao.Text = "Efetuar Movimentação";
             this.btnMovimentacao.UseVisualStyleBackColor = false;
             this.btnMovimentacao.Click += new System.EventHandler(this.btnMovimentacao_Click);
@@ -98,7 +100,7 @@ namespace Banco_Comercial_IBM
             this.lblTipoMovimento.AutoSize = true;
             this.lblTipoMovimento.Font = new System.Drawing.Font("Lucida Console", 9F);
             this.lblTipoMovimento.ForeColor = System.Drawing.Color.White;
-            this.lblTipoMovimento.Location = new System.Drawing.Point(28, 210);
+            this.lblTipoMovimento.Location = new System.Drawing.Point(29, 277);
             this.lblTipoMovimento.Name = "lblTipoMovimento";
             this.lblTipoMovimento.Size = new System.Drawing.Size(337, 30);
             this.lblTipoMovimento.TabIndex = 13;
@@ -109,7 +111,7 @@ namespace Banco_Comercial_IBM
             this.lblValorOperacao.AutoSize = true;
             this.lblValorOperacao.Font = new System.Drawing.Font("Lucida Console", 9F);
             this.lblValorOperacao.ForeColor = System.Drawing.Color.White;
-            this.lblValorOperacao.Location = new System.Drawing.Point(28, 277);
+            this.lblValorOperacao.Location = new System.Drawing.Point(29, 344);
             this.lblValorOperacao.Name = "lblValorOperacao";
             this.lblValorOperacao.Size = new System.Drawing.Size(337, 30);
             this.lblValorOperacao.TabIndex = 12;
@@ -118,27 +120,27 @@ namespace Banco_Comercial_IBM
             // txtValor
             // 
             this.txtValor.Font = new System.Drawing.Font("Lucida Console", 9F);
-            this.txtValor.Location = new System.Drawing.Point(499, 271);
+            this.txtValor.Location = new System.Drawing.Point(500, 338);
             this.txtValor.MaxLength = 15;
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(480, 37);
-            this.txtValor.TabIndex = 7;
+            this.txtValor.TabIndex = 10;
             // 
             // txtNumeroContaDestino
             // 
             this.txtNumeroContaDestino.Enabled = false;
             this.txtNumeroContaDestino.Font = new System.Drawing.Font("Lucida Console", 9F);
-            this.txtNumeroContaDestino.Location = new System.Drawing.Point(499, 337);
+            this.txtNumeroContaDestino.Location = new System.Drawing.Point(500, 404);
             this.txtNumeroContaDestino.Name = "txtNumeroContaDestino";
             this.txtNumeroContaDestino.Size = new System.Drawing.Size(480, 37);
-            this.txtNumeroContaDestino.TabIndex = 8;
+            this.txtNumeroContaDestino.TabIndex = 11;
             // 
             // lblNumContaDestino
             // 
             this.lblNumContaDestino.AutoSize = true;
             this.lblNumContaDestino.Font = new System.Drawing.Font("Lucida Console", 9F);
             this.lblNumContaDestino.ForeColor = System.Drawing.Color.White;
-            this.lblNumContaDestino.Location = new System.Drawing.Point(28, 343);
+            this.lblNumContaDestino.Location = new System.Drawing.Point(29, 410);
             this.lblNumContaDestino.Name = "lblNumContaDestino";
             this.lblNumContaDestino.Size = new System.Drawing.Size(373, 30);
             this.lblNumContaDestino.TabIndex = 26;
@@ -148,20 +150,20 @@ namespace Banco_Comercial_IBM
             // 
             this.txtNumeroConta.Enabled = false;
             this.txtNumeroConta.Font = new System.Drawing.Font("Lucida Console", 9F);
-            this.txtNumeroConta.Location = new System.Drawing.Point(499, 69);
+            this.txtNumeroConta.Location = new System.Drawing.Point(499, 70);
             this.txtNumeroConta.Name = "txtNumeroConta";
             this.txtNumeroConta.Size = new System.Drawing.Size(480, 37);
-            this.txtNumeroConta.TabIndex = 4;
+            this.txtNumeroConta.TabIndex = 6;
             // 
             // btnNovaConta
             // 
             this.btnNovaConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovaConta.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Bold);
             this.btnNovaConta.ForeColor = System.Drawing.Color.White;
-            this.btnNovaConta.Location = new System.Drawing.Point(474, 845);
+            this.btnNovaConta.Location = new System.Drawing.Point(474, 957);
             this.btnNovaConta.Name = "btnNovaConta";
             this.btnNovaConta.Size = new System.Drawing.Size(285, 71);
-            this.btnNovaConta.TabIndex = 10;
+            this.btnNovaConta.TabIndex = 13;
             this.btnNovaConta.Text = "Nova Conta";
             this.btnNovaConta.UseVisualStyleBackColor = true;
             this.btnNovaConta.Click += new System.EventHandler(this.btnNovaConta_Click);
@@ -171,7 +173,7 @@ namespace Banco_Comercial_IBM
             this.lblMsg.AutoSize = true;
             this.lblMsg.Font = new System.Drawing.Font("Lucida Console", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMsg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(119)))), ((int)(((byte)(26)))));
-            this.lblMsg.Location = new System.Drawing.Point(29, 486);
+            this.lblMsg.Location = new System.Drawing.Point(29, 561);
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(0, 28);
             this.lblMsg.TabIndex = 33;
@@ -181,16 +183,18 @@ namespace Banco_Comercial_IBM
             this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelatorios.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Bold);
             this.btnRelatorios.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorios.Location = new System.Drawing.Point(797, 845);
+            this.btnRelatorios.Location = new System.Drawing.Point(797, 957);
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Size = new System.Drawing.Size(277, 71);
-            this.btnRelatorios.TabIndex = 11;
+            this.btnRelatorios.TabIndex = 14;
             this.btnRelatorios.Text = "Relatórios";
             this.btnRelatorios.UseVisualStyleBackColor = true;
             this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // grpConta
             // 
+            this.grpConta.Controls.Add(this.lblTipoConta);
+            this.grpConta.Controls.Add(this.txtTipoConta);
             this.grpConta.Controls.Add(this.lblNumConta);
             this.grpConta.Controls.Add(this.lblSaldoConta);
             this.grpConta.Controls.Add(this.lblValorOperacao);
@@ -205,10 +209,10 @@ namespace Banco_Comercial_IBM
             this.grpConta.Controls.Add(this.txtNumeroContaDestino);
             this.grpConta.Font = new System.Drawing.Font("Lucida Console", 9.900001F, System.Drawing.FontStyle.Bold);
             this.grpConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(119)))), ((int)(((byte)(26)))));
-            this.grpConta.Location = new System.Drawing.Point(54, 288);
+            this.grpConta.Location = new System.Drawing.Point(54, 298);
             this.grpConta.Name = "grpConta";
-            this.grpConta.Size = new System.Drawing.Size(1020, 530);
-            this.grpConta.TabIndex = 39;
+            this.grpConta.Size = new System.Drawing.Size(1020, 615);
+            this.grpConta.TabIndex = 5;
             this.grpConta.TabStop = false;
             this.grpConta.Text = "Conta";
             // 
@@ -217,7 +221,7 @@ namespace Banco_Comercial_IBM
             this.lblNumConta.AutoSize = true;
             this.lblNumConta.Font = new System.Drawing.Font("Lucida Console", 9F);
             this.lblNumConta.ForeColor = System.Drawing.Color.White;
-            this.lblNumConta.Location = new System.Drawing.Point(29, 76);
+            this.lblNumConta.Location = new System.Drawing.Point(29, 77);
             this.lblNumConta.Name = "lblNumConta";
             this.lblNumConta.Size = new System.Drawing.Size(229, 30);
             this.lblNumConta.TabIndex = 34;
@@ -228,7 +232,7 @@ namespace Banco_Comercial_IBM
             this.lblSaldoConta.AutoSize = true;
             this.lblSaldoConta.Font = new System.Drawing.Font("Lucida Console", 9F);
             this.lblSaldoConta.ForeColor = System.Drawing.Color.White;
-            this.lblSaldoConta.Location = new System.Drawing.Point(28, 140);
+            this.lblSaldoConta.Location = new System.Drawing.Point(29, 207);
             this.lblSaldoConta.Name = "lblSaldoConta";
             this.lblSaldoConta.Size = new System.Drawing.Size(283, 30);
             this.lblSaldoConta.TabIndex = 30;
@@ -241,7 +245,7 @@ namespace Banco_Comercial_IBM
             this.txtBuscaTitular.MaxLength = 80;
             this.txtBuscaTitular.Name = "txtBuscaTitular";
             this.txtBuscaTitular.Size = new System.Drawing.Size(263, 37);
-            this.txtBuscaTitular.TabIndex = 2;
+            this.txtBuscaTitular.TabIndex = 3;
             // 
             // lblBuscaTitular
             // 
@@ -263,7 +267,7 @@ namespace Banco_Comercial_IBM
             this.btnBuscaTitular.Location = new System.Drawing.Point(803, 121);
             this.btnBuscaTitular.Name = "btnBuscaTitular";
             this.btnBuscaTitular.Size = new System.Drawing.Size(176, 67);
-            this.btnBuscaTitular.TabIndex = 3;
+            this.btnBuscaTitular.TabIndex = 4;
             this.btnBuscaTitular.Text = "Buscar";
             this.btnBuscaTitular.UseVisualStyleBackColor = false;
             this.btnBuscaTitular.Click += new System.EventHandler(this.btnBuscaTitular_Click);
@@ -287,7 +291,7 @@ namespace Banco_Comercial_IBM
             this.cmbContas.Location = new System.Drawing.Point(499, 59);
             this.cmbContas.Name = "cmbContas";
             this.cmbContas.Size = new System.Drawing.Size(480, 38);
-            this.cmbContas.TabIndex = 1;
+            this.cmbContas.TabIndex = 2;
             this.cmbContas.SelectedIndexChanged += new System.EventHandler(this.cmbContas_SelectedIndexChanged);
             // 
             // grpBuscaConta
@@ -302,16 +306,36 @@ namespace Banco_Comercial_IBM
             this.grpBuscaConta.Location = new System.Drawing.Point(54, 46);
             this.grpBuscaConta.Name = "grpBuscaConta";
             this.grpBuscaConta.Size = new System.Drawing.Size(1020, 216);
-            this.grpBuscaConta.TabIndex = 38;
+            this.grpBuscaConta.TabIndex = 1;
             this.grpBuscaConta.TabStop = false;
             this.grpBuscaConta.Text = "Busca de Conta";
+            // 
+            // lblTipoConta
+            // 
+            this.lblTipoConta.AutoSize = true;
+            this.lblTipoConta.Font = new System.Drawing.Font("Lucida Console", 9F);
+            this.lblTipoConta.ForeColor = System.Drawing.Color.White;
+            this.lblTipoConta.Location = new System.Drawing.Point(30, 143);
+            this.lblTipoConta.Name = "lblTipoConta";
+            this.lblTipoConta.Size = new System.Drawing.Size(265, 30);
+            this.lblTipoConta.TabIndex = 36;
+            this.lblTipoConta.Text = "Tipo de conta:";
+            // 
+            // txtTipoConta
+            // 
+            this.txtTipoConta.Enabled = false;
+            this.txtTipoConta.Font = new System.Drawing.Font("Lucida Console", 9F);
+            this.txtTipoConta.Location = new System.Drawing.Point(500, 136);
+            this.txtTipoConta.Name = "txtTipoConta";
+            this.txtTipoConta.Size = new System.Drawing.Size(480, 37);
+            this.txtTipoConta.TabIndex = 7;
             // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(64)))), ((int)(((byte)(134)))));
-            this.ClientSize = new System.Drawing.Size(1148, 991);
+            this.ClientSize = new System.Drawing.Size(1148, 1099);
             this.Controls.Add(this.grpConta);
             this.Controls.Add(this.grpBuscaConta);
             this.Controls.Add(this.btnRelatorios);
@@ -352,6 +376,8 @@ namespace Banco_Comercial_IBM
         private System.Windows.Forms.ComboBox cmbContas;
         private System.Windows.Forms.GroupBox grpBuscaConta;
         private System.Windows.Forms.Label lblNumConta;
+        private System.Windows.Forms.Label lblTipoConta;
+        private System.Windows.Forms.TextBox txtTipoConta;
     }
 }
 

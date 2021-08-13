@@ -46,7 +46,7 @@ namespace Banco_Comercial_IBM
             c4.Titular = new Cliente("Bill");
             this.AdicionarConta(c4);
 
-            this.Height = 440;
+            this.Height = 490;
             this.Width = 440;
 
             this.ActiveControl = txtBuscaTitular;
@@ -215,12 +215,12 @@ namespace Banco_Comercial_IBM
             }
             if (txtValor.Text == "")
             {
-                msgErro += "Preencha o Valor da Operação.\n";
+                msgErro += "Valor da Operação não está preenchido.\n";
                 camposPreenchidos = false;
             }
             if (txtNumeroContaDestino.Text == "")
             {
-                msgErro += "Número da conta destino vazio.\n";
+                msgErro += "Número da conta destino não está preenchido.\n";
                 camposPreenchidos = false;
             }
 
@@ -255,15 +255,22 @@ namespace Banco_Comercial_IBM
 
         private void cmbContas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int indice = cmbContas.SelectedIndex;
-            Conta selecionada = listContas[indice];
+            Conta selecionada = (Conta)cmbContas.SelectedItem;
 
             cmbTipoMovimento.SelectedIndex = -1;
 
             txtNumeroConta.Text = selecionada.Numero.ToString();
             txtNumeroContaDestino.Text = selecionada.Numero.ToString();
-
             txtSaldoFinal.Text = selecionada.Saldo.ToString();
+
+            if (selecionada is ContaCorrente)
+                txtTipoConta.Text = "Conta Corrente";
+            else if (selecionada is ContaPoupanca)
+                txtTipoConta.Text = "Conta Poupança";
+            else if (selecionada is ContaInvestimento)
+                txtTipoConta.Text = "Conta Investimento";
+            else
+                txtTipoConta.Text = "Conta Estudante";
         }
 
         private void btnNovaConta_Click(object sender, EventArgs e)
